@@ -4,8 +4,7 @@ import edu.hrishi.restaurant.dto.RestaurantDto;
 import edu.hrishi.restaurant.entity.Restaurant;
 import edu.hrishi.restaurant.repository.RestaurantRespository;
 import lombok.RequiredArgsConstructor;
-import mapper.RestaurantMapper;
-import org.springframework.http.ResponseEntity;
+import edu.hrishi.restaurant.mapper.RestaurantMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,6 +19,7 @@ public class RestaurantService {
 
     public RestaurantDto save(RestaurantDto restaurantDto) {
         Restaurant restaurant = RestaurantMapper.INSTANCE.mapRestaurantDtoToRestaurant(restaurantDto);
-        return RestaurantMapper.INSTANCE.mapRestaurantToRestaurantDto(restaurantRespository.save(restaurant));
+        restaurant = restaurantRespository.save(restaurant);
+        return RestaurantMapper.INSTANCE.mapRestaurantToRestaurantDto(restaurant);
     }
 }
