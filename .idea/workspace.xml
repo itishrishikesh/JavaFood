@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ffa85e3-76b0-40a0-83f6-a9ccea11b62c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/controller/RestaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/controller/RestaurantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/dto/RestaurantDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/dto/RestaurantDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/entity/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/entity/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/service/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/service/RestaurantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/mapper/RestaurantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/mapper/RestaurantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2aUQhL0NZvqySSKwWhTn60uxTiY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EurekaApplication.executor": "Run",
+    "Application.RestaurantApplication.executor": "Run",
+    "Maven.restaurant [org.springframework.boot:spring-boot-maven-plugin:3.2.2-SNAPSHOT:run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hp__develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.RestaurantApplication">
+    <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.hrishi.eureka.EurekaApplication" />
+      <module name="eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.hrishi.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.hrishi.restaurant.RestaurantApplication" />
+      <module name="restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.hrishi.restaurant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RestaurantApplication" />
+        <item itemvalue="Application.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-f644763e9732-da6bd485" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ffa85e3-76b0-40a0-83f6-a9ccea11b62c" name="Changes" comment="" />
+      <created>1704370795729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704370795729</updated>
+    </task>
+    <servers />
+  </component>
+</project>
