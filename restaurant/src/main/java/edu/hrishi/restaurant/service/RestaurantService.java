@@ -22,4 +22,9 @@ public class RestaurantService {
         restaurant = restaurantRespository.save(restaurant);
         return RestaurantMapper.INSTANCE.mapRestaurantToRestaurantDto(restaurant);
     }
+
+    public RestaurantDto getRestaurant(Integer id) {
+        Restaurant restaurant = restaurantRespository.findById(id).orElseThrow();
+        return RestaurantMapper.INSTANCE.mapRestaurantToRestaurantDto(restaurant);
+    }
 }
