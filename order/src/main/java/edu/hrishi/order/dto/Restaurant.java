@@ -1,4 +1,4 @@
-package edu.hrishi.restaurant.dto;
+package edu.hrishi.order.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RestaurantDto {
+public class Restaurant {
     private int id;
     private String name;
     private String address;
