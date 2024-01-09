@@ -1,20 +1,17 @@
 server:
-  port: 8082
-
+  port: 9094
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka
 
-spring:
-  application:
-    name: catalogue
-  datasource:
-    url: jdbc:postgresql://localhost:5432/food
-    password: root
-    username: postgres
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+application:
+   name: order-service
+data:
+  mongodb:
+    uri: mongodb://localhost:27017/orderdb
+    host: localhost
+    port: 27017
+    database: orderdb
+    repositories:
+      enabled: true

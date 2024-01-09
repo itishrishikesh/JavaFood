@@ -5,28 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffa85e3-76b0-40a0-83f6-a9ccea11b62c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/controller/FoodCatalogueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/FoodCataloguePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/FoodItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/entity/FoodItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/mapper/FoodItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/repository/FoodItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/service/FoodCatalogueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/edu/hrishi/user/controller/AppUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/edu/hrishi/user/dto/AppUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/edu/hrishi/user/mapper/AppUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/edu/hrishi/user/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/edu/hrishi/user/service/AppUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/dto/FoodItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/dto/OrderDtoFE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/dto/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/entity/Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/order/service/SequenceGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/controller/RestaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/controller/RestaurantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/service/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/service/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/CatalogueApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/CatalogueApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/controller/FoodCatalogueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/controller/FoodCatalogueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/FoodCataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/dto/FoodCataloguePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/FoodItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/dto/FoodItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/dto/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/dto/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/entity/FoodItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/entity/FoodItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/mapper/FoodItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/mapper/FoodItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/repository/FoodItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/repository/FoodItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/service/FoodCatalogueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/java/edu/hrishi/catalogue/service/FoodCatalogueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/java/edu/hrishi/catalogue/CatalogueApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue/src/test/java/edu/hrishi/catalogue/CatalogueApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/dto/RestaurantDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/edu/hrishi/restaurant/dto/RestaurantDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,7 +73,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CatalogueApplication.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.CatalogueApplication.executor": "Run",
     "Application.EurekaApplication.executor": "Run",
     "Application.OrderApplication.executor": "Debug",
     "Application.RestaurantApplication.executor": "Run",
@@ -88,7 +102,7 @@
   <component name="RunManager" selected="Application.CatalogueApplication">
     <configuration name="CatalogueApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.hrishi.catalogue.CatalogueApplication" />
-      <module name="order" />
+      <module name="catalogue" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.hrishi.catalogue.*" />
@@ -140,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.RestaurantApplication" />
         <item itemvalue="Application.CatalogueApplication" />
-        <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -164,21 +178,5 @@
       <updated>1704370795729</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/controller/FoodCatalogueController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order/src/main/java/edu/hrishi/catalogue/controller/FoodCatalogueController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

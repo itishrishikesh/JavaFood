@@ -19,17 +19,14 @@ import java.util.List;
 public class FoodCatalogueController {
     private final FoodCatalogueService foodCatalogueService;
     private final RestTemplate restTemplate;
-
     @PostMapping("/item")
     public ResponseEntity<FoodItemDto> saveFoodItem(@RequestBody FoodItemDto foodItemDto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(foodCatalogueService.saveFoodItem(foodItemDto));
     }
-
     @GetMapping("/restaurant/{id}")
     public ResponseEntity<FoodCataloguePage> getFoodCatalogue(@PathVariable Integer id) {
         Restaurant restaurant = restTemplate.getForObject("http://restaurant/" + id, Restaurant.class);
         List<FoodItem> lstFoodItems = foodCatalogueService.getFoodItemsByRestaurantId(id);
         return ResponseEntity.ok(new FoodCataloguePage(lstFoodItems, restaurant));
     }
-
 }
