@@ -26,6 +26,6 @@ public class OrderService {
         return OrderMapper.INSTANCE.orderToOrderDto(orderToReturn);
     }
     private UserDto getUserDetailsById(Integer userId) {
-        return restTemplate.getForObject("http://user-service/user", UserDto.class);
+        return restTemplate.getForObject("http://user-service/user/" + userId, UserDto.class);
     }
 }
