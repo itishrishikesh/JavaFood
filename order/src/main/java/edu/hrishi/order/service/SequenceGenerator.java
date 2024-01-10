@@ -18,7 +18,7 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
 public class SequenceGenerator {
     private final MongoOperations mongoOperations;
 
-    public int generateNextOrderId() {
+    public Integer generateNextOrderId() {
         Sequence counter = mongoOperations.findAndModify(
                 Query.query(where("_id").is("sequence")),
                 new Update().inc("sequence", 1),
