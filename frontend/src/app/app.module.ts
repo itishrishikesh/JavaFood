@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
+import { RestaurantsModule } from './restaurants/restaurants.module';
+import { HttpClientModule } from '@angular/common/http'
+import { CatalogueModule } from './catalogue/catalogue.module';
+import { OrderSummaryModule } from './order-summary/order-summary.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +16,12 @@ import { HeaderModule } from './header/header.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderModule
+    HeaderModule,
+    RestaurantsModule,
+    HttpClientModule,
+    CatalogueModule,
+    OrderSummaryModule,
+    RestaurantsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

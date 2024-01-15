@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/food/catalogue")
+@CrossOrigin
 public class FoodCatalogueController {
     private final FoodCatalogueService foodCatalogueService;
     private final RestTemplate restTemplate;
