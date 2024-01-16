@@ -16,6 +16,7 @@ import java.util.NoSuchElementException;
 @RequestMapping("/restaurant")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin
 public class RestaurantController {
     private final RestaurantService restaurantService;
     @GetMapping("/all")

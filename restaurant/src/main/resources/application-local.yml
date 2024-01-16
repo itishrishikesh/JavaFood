@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/javafood
+    password: root
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
