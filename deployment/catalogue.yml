@@ -1,0 +1,51 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: catalogueapp
+  labels:
+    catalogueapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      labels:
+        app: catalogueapp
+  template:
+    metadata:
+      labels:
+        app: catalogueapp
+    spec:
+      containers:
+        - name: catalogueapp
+          image: itishrishikesh/catalogue:latest
+          imagePullPolicy: Always
+          port:
+            - containerPort: 9091
+          env:
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-password
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: configmap
+                  key: cataloguedb_url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogue-service
+spec:
+  ports:
+    - protocol: TCP
+      port: 9091
+      targetPort: 9091
+  selector:
+    app: catalogueapp

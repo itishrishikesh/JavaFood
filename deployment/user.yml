@@ -1,0 +1,51 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: userapp
+  labels:
+    userapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      labels:
+        app: userapp
+  template:
+    metadata:
+      labels:
+        app: userapp
+    spec:
+      containers:
+        - name: userapp
+          image: itishrishikesh/restaurant:latest
+          imagePullPolicy: Always
+          port:
+            - containerPort: 9094
+          env:
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-password
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: configmap
+                  key: userdb_url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-service
+spec:
+  ports:
+    - protocol: TCP
+      port: 9094
+      targetPort: 9094
+  selector:
+    app: userapp

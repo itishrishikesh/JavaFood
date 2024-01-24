@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  restaurantdb_url: jdbc:mysql://localhost:5432/restaurant
+  foodcataloguedb_url: jdbc:mysql://localhost:5432/catalogue
+  userdb_url: jdbc:mysql://localhost:5432/user
+  orderdb_url: mongodb+srv://admin:admin@localhost/?retryWrites=true&majority
+  eureka_service_address: http://eureka-0.eureka-service:8761/eureka

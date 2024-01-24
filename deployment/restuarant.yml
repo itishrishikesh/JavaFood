@@ -1,0 +1,51 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: restaurantapp
+  labels:
+    restaurantapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      labels:
+        app: restaurantapp
+  template:
+    metadata:
+      labels:
+        app: restaurantapp
+    spec:
+      containers:
+        - name: restaurantapp
+          image: itishrishikesh/restaurant:latest
+          imagePullPolicy: Always
+          port:
+            - containerPort: 9093
+          env:
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: postgres-password
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: configmap
+                  key: restaurantdb_url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: restaurant-service
+spec:
+  ports:
+    - protocol: TCP
+      port: 9093
+      targetPort: 9093
+  selector:
+    app: restaurantapp
