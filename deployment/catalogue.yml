@@ -20,7 +20,7 @@ spec:
           image: itishrishikesh/catalogue:latest
           imagePullPolicy: Always
           port:
-            - containerPort: 9091
+            - containerPort: 8082
           env:
             - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
@@ -45,7 +45,7 @@ metadata:
 spec:
   ports:
     - protocol: TCP
-      port: 9091
-      targetPort: 9091
+      port: 8082
+      targetPort: 8082
   selector:
     app: catalogueapp

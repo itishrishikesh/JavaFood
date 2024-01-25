@@ -20,7 +20,7 @@ spec:
           image: itishrishikesh/order:latest
           imagePullPolicy: Always
           port:
-            - containerPort: 9092
+            - containerPort: 9094
           env:
             - name: JAVA_TOOL_OPTIONS
               value: "-Djdk.tls.client.protocol=TLSv1.2"
@@ -39,7 +39,7 @@ metadata:
 spec:
   ports:
     - protocol: TCP
-      port: 9092
-      targetPort: 9092
+      port: 9094
+      targetPort: 9094
   selector:
     app: orderapp
