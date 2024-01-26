@@ -6,6 +6,7 @@ import edu.hrishi.restaurant.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import edu.hrishi.restaurant.mapper.RestaurantMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +27,7 @@ public class RestaurantController {
 
     @PostMapping
     public ResponseEntity<RestaurantDto> save(@RequestBody RestaurantDto restaurantDto) {
-        return ResponseEntity.ok(restaurantService.save(restaurantDto));
+        return ResponseEntity.status(HttpStatus.CREATED).body(restaurantService.save(restaurantDto));
     }
 
     @GetMapping("/{id}")

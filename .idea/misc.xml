@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/catalogue/pom.xml" />
         <option value="$PROJECT_DIR$/restaurant/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
