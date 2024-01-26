@@ -1,14 +1,13 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: userapp
   labels:
-    userapp
+    app: userapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      labels:
         app: userapp
   template:
     metadata:
@@ -19,7 +18,7 @@ spec:
         - name: userapp
           image: itishrishikesh/restaurant:latest
           imagePullPolicy: Always
-          port:
+          ports:
             - containerPort: 9094
           env:
             - name: SPRING_DATASOURCE_USERNAME

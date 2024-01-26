@@ -1,14 +1,13 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: restaurantapp
   labels:
-    restaurantapp
+    app: restaurantapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      labels:
         app: restaurantapp
   template:
     metadata:
@@ -19,7 +18,7 @@ spec:
         - name: restaurantapp
           image: itishrishikesh/restaurant:latest
           imagePullPolicy: Always
-          port:
+          ports:
             - containerPort: 9093
           env:
             - name: SPRING_DATASOURCE_USERNAME

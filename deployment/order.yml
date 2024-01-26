@@ -1,25 +1,24 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orderapp
+  name: order
   labels:
-    orderapp
+    app: order
 spec:
   replicas: 1
   selector:
     matchLabels:
-      labels:
-        app: orderapp
+        app: order
   template:
     metadata:
       labels:
-        app: orderapp
+        app: order
     spec:
       containers:
-        - name: orderapp
+        - name: order
           image: itishrishikesh/order:latest
           imagePullPolicy: Always
-          port:
+          ports:
             - containerPort: 9094
           env:
             - name: JAVA_TOOL_OPTIONS
@@ -32,6 +31,7 @@ spec:
             - name: SPRING_DATA_MONGODB_DATABASE
               value: "orderdb"
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -42,4 +42,4 @@ spec:
       port: 9094
       targetPort: 9094
   selector:
-    app: orderapp
+    app: order

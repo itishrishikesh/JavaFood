@@ -1,0 +1,13 @@
+services:
+  eureka:
+    build: ./eureka
+  catalogue:
+    build: ./catalogue
+    depends_on:
+      - eureka
+#  order:
+#    build: ./order
+#  restaurant:
+#    build: ./restaurant
+#  user:
+#    build: ./user

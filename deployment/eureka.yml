@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: itishrihikesh/eureka:latest
+          image: itishrishikesh/eureka:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8761
